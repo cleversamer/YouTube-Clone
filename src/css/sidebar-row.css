@@ -35,3 +35,31 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 960px) {
+  .sidebar-row--heading,
+  .sidebar-row__title {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sidebar-row--heading,
+  .sidebar-row__title {
+    font-size: 11px;
+  }
+
+  .sidebar-row__icon {
+    font-size: large !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar-row {
+    justify-content: center;
+  }
+
+  .sidebar-row__title {
+    display: none;
+  }
+}

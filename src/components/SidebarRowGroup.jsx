@@ -7,8 +7,14 @@ const SidebarRowGroup = ({ rows }) => {
     borderTop: "1px solid #eee",
   };
 
+  const getClasses = () => {
+    const title = rows[0].title;
+    const condition = title === "Home" || title === "Library";
+    return `sidebar-row-group ${!condition && "wide-screens"}`;
+  };
+
   return (
-    <div className="sidebar-row-group" style={style}>
+    <div className={getClasses()} style={style}>
       {rows.map((row) => (
         <SidebarRow key={row.title} {...row} />
       ))}

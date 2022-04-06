@@ -10,3 +10,9 @@ html {
 .clickable {
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .wide-screens {
+    display: none;
+  }
+}
