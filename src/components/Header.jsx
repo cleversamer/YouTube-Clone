@@ -43,6 +43,13 @@ const Header = () => {
           src="https://avatars.githubusercontent.com/u/73291969?v=4"
         />
       </div>
+
+      <div className="header__avatar clickable">
+        <Avatar
+          alt="Samer A."
+          src="https://avatars.githubusercontent.com/u/73291969?v=4"
+        />
+      </div>
     </header>
   );
 };
