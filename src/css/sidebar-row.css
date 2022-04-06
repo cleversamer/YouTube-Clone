@@ -1,0 +1,37 @@
+.sidebar-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sidebar-row:hover {
+  background-color: #efefef;
+}
+
+.sidebar-row--selected {
+  background-color: #efefef;
+}
+
+.sidebar-row--heading {
+  padding-bottom: 10px;
+  margin-left: 20px;
+  color: #808080;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sidebar-row--heading * {
+  font: inherit;
+}
+
+.sidebar-row__icon {
+  font-size: x-large !important;
+}
+
+.sidebar-row__title {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -1,0 +1,5 @@
+.videos {
+  flex: 0.83;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
