@@ -47,7 +47,7 @@ const Sidebar = () => {
       { Icon: Avatar, title: "Barret Petra" },
       { Icon: Avatar, title: "Georgie Sophie" },
       { Icon: Avatar, title: "Jessa Carmen" },
-      { Icon: KeyboardArrowDown, title: "Show more" },
+      { Icon: KeyboardArrowDown, title: "Show 40 more" },
     ],
     [
       { heading: true, title: "More From YouTube" },

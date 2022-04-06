@@ -62,4 +62,8 @@
   .sidebar-row__title {
     display: none;
   }
+
+  .sidebar-row__icon {
+    font-size: x-large !important;
+  }
 }
