@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { TuneOutlined } from "@mui/icons-material";
+import db from "../firebase";
 import ChannelRow from "./ChannelRow";
 import VideoRow from "./VideoRow";
-import { videos } from "../data";
 import "../css/search.css";
 
 const Search = () => {
+  const [videos, setVideos] = useState([]);
   const { searchTerm } = useParams();
+
+  useEffect(() => {
+    db.collection("videos").onSnapshot((snapshot) => {
+      setVideos(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+    });
+  }, []);
 
   return (
     <div className="search">
