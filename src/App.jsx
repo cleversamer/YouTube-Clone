@@ -1,9 +1,10 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Videos from "./components/Videos";
+import Search from "./components/Search";
 import NotFound from "./components/NotFound";
-import { Routes, Route } from "react-router-dom";
 import "./css/app.css";
 
 const App = () => {
@@ -16,6 +17,11 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Videos />} />
+
+          <Route path="/search" element={<Search />}>
+            <Route path=":search" element={<Search />} />
+          </Route>
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

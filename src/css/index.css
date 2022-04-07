@@ -7,6 +7,11 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .clickable {
   cursor: pointer;
 }

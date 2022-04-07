@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Menu,
   Search,
@@ -10,6 +11,15 @@ import RandomAvatar from "./Avatar";
 import "../css/header.css";
 
 const Header = () => {
+  const [input, setInput] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    navigate(`/search/${input}`);
+    setInput("");
+  };
+
   return (
     <header className="header">
       <div className="header__left">
@@ -18,20 +28,25 @@ const Header = () => {
         <a href="/">
           <img
             className="header__logo clickable"
-            src="img/logo.png"
+            src="/img/logo.png"
             alt="YouTube logo"
           />
         </a>
       </div>
 
-      <div className="header__input-container">
+      <form onSubmit={handleSearch} className="header__input-container">
         <input
           type="text"
           placeholder="Search"
+          value={input}
+          onChange={(e) => setInput(e.currentTarget.value)}
           className="header__search-input"
         />
-        <Search className="header__search-icon clickable" />
-      </div>
+
+        <Link to={`/search/${input}`}>
+          <Search className="header__search-icon clickable" />
+        </Link>
+      </form>
 
       <div className="header__icons">
         <VideoCall className="header__icon clickable" />
