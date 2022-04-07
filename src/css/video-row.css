@@ -1,7 +1,6 @@
 .video-row {
   display: flex;
   margin-bottom: 30px;
-  max-width: 700px;
   cursor: pointer;
 }
 
@@ -34,7 +33,30 @@
 }
 
 .video-row__description {
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 12px;
   color: #606060;
+}
+
+@media screen and (max-width: 520px) {
+  .video-row {
+    flex-direction: column;
+  }
+
+  .video-row__poster {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .video-row__text {
+    margin-top: 10px;
+  }
+
+  .video-row__description {
+    display: none;
+  }
+
+  .video-row__views {
+    display: none;
+  }
 }

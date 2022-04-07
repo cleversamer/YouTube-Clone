@@ -11,8 +11,8 @@ const VideoRow = ({
   timestamp,
 }) => {
   const truncate = (str = "") => {
-    const condition = str.length >= 300;
-    return condition ? str.substring(0, 300) + "..." : str;
+    const condition = str.length >= 50;
+    return condition ? str.substring(0, 50) + "..." : str;
   };
 
   return (

@@ -1,7 +1,7 @@
 .channel-row {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 100%;
 }
 
 .channel-row__avatar {
@@ -44,4 +44,15 @@
 .channel-row__description {
   color: #606060;
   font-size: small !important;
+}
+
+@media screen and (max-width: 500px) {
+  .channel-row__subscribers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .channel-row__subscribers > *::after {
+    display: none;
+  }
 }

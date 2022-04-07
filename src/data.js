@@ -56,3 +56,5 @@ export const rowGroups = [
   ],
   [{ heading: true, title: "© 2022 Google LLC", textTransform: "none" }],
 ];
+
+export const videos = [];
