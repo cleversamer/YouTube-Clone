@@ -11,10 +11,17 @@ const VideoCard = ({
   posterUrl,
   avatarUrl,
   verified,
+  link,
 }) => {
   return (
     <div className="video-card">
-      <img className="video-card__poster" src={posterUrl} alt="Video poster" />
+      <a href={link} target="__blank">
+        <img
+          className="video-card__poster"
+          src={posterUrl}
+          alt="Video poster"
+        />
+      </a>
 
       <div className="video-card__info">
         <Avatar className="video-card__avatar" src={avatarUrl} />

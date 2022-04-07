@@ -9,6 +9,7 @@ const VideoRow = ({
   subscribers,
   views,
   timestamp,
+  link,
 }) => {
   const truncate = (str = "") => {
     const condition = str.length >= 50;
@@ -17,7 +18,9 @@ const VideoRow = ({
 
   return (
     <div className="video-row">
-      <img className="video-row__poster" src={posterUrl} alt="Video poster" />
+      <a href={link} target="__blank">
+        <img className="video-row__poster" src={posterUrl} alt="Video poster" />
+      </a>
 
       <div className="video-row__text">
         <h3 className="video-row__heading">{title}</h3>
