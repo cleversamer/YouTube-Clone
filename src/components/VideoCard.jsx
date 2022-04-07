@@ -20,11 +20,12 @@ const VideoCard = ({
         <div className="video-card__text-info">
           <h4 className="video-card__title">{title}</h4>
 
-          <p className="video-card__channel">{channel}</p>
-
-          <p className="video-card__views">
-            {views} ● {timestamp}
-          </p>
+          <div className="video-card__views-container">
+            <p className="video-card__channel">{channel}</p>
+            <p className="video-card__views">
+              <span>{views}</span> {timestamp}
+            </p>
+          </div>
         </div>
       </div>
     </div>
