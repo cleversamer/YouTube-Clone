@@ -1,0 +1,18 @@
+.not-found {
+  display: grid;
+  place-items: center;
+  flex: 0.83;
+  background-color: #fafafa;
+  height: 91vh;
+}
+
+.not-found__message {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+@media screen and (max-width: 500px) {
+  .not-found {
+    flex: 1;
+  }
+}
