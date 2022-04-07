@@ -58,7 +58,7 @@ const Sidebar = () => {
       { Icon: EmojiEventsOutlined, title: "Sports" },
       { Icon: FeedbackOutlined, title: "Feedback" },
     ],
-    [{ heading: true, title: "© 2022 Google LLC" }],
+    [{ heading: true, title: "© 2022 Google LLC", textTransform: "none" }],
   ];
 
   const generateId = (title) => {

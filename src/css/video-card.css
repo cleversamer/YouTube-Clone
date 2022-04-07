@@ -80,3 +80,14 @@
     font-size: xx-small;
   }
 }
+
+@media screen and (max-width: 280px) {
+  .video-card__title {
+    font-size: 13px;
+  }
+
+  .video-card__channel,
+  .video-card__views {
+    font-size: 12px;
+  }
+}

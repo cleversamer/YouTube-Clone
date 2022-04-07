@@ -21,13 +21,15 @@
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px) {
+  .videos__heading {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .videos {
     flex: 1;
     padding: 0;
-  }
-
-  .videos__heading {
-    display: none;
   }
 }
