@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { TuneOutlined } from "@mui/icons-material";
 import db from "../firebase";
 import ChannelRow from "./ChannelRow";
@@ -8,7 +7,6 @@ import "../css/search.css";
 
 const Search = () => {
   const [videos, setVideos] = useState([]);
-  const { searchTerm } = useParams();
 
   useEffect(() => {
     db.collection("videos").onSnapshot((snapshot) => {

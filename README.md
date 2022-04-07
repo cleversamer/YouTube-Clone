@@ -2,7 +2,7 @@
 
 ## 🔴 Live Demo
 
-Not live yet...
+[Click here...](https://samer-yt.firebaseapp.com/)
 
 ## Description
 
@@ -14,6 +14,10 @@ YouTube Clone with React & Firebase
 
 - React
 - React DOM
+- React Router DOM
+- Firebase
+- MaterialUI
+- MaterialUI Icons
 
 ### Installing
 
