@@ -31,6 +31,16 @@
   color: #808080;
 }
 
+.video-card__channel {
+  display: flex;
+  align-items: center;
+}
+
+.video-card__verified {
+  font-size: inherit !important;
+  margin-left: 5px;
+}
+
 .video-card__views > *::after {
   content: "●";
   margin-left: 5px;

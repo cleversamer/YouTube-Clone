@@ -1,5 +1,6 @@
 import React from "react";
 import { Avatar } from "@mui/material";
+import { CheckCircle } from "@mui/icons-material";
 import "../css/video-card.css";
 
 const VideoCard = ({
@@ -9,6 +10,7 @@ const VideoCard = ({
   timestamp,
   posterUrl,
   avatarUrl,
+  verified,
 }) => {
   return (
     <div className="video-card">
@@ -21,7 +23,11 @@ const VideoCard = ({
           <h4 className="video-card__title">{title}</h4>
 
           <div className="video-card__views-container">
-            <p className="video-card__channel">{channel}</p>
+            <p className="video-card__channel">
+              {channel}{" "}
+              {verified && <CheckCircle className="video-card__verified" />}
+            </p>
+
             <p className="video-card__views">
               <span>{views}</span> {timestamp}
             </p>

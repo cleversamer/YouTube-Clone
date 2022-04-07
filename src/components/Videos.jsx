@@ -9,6 +9,7 @@ const Videos = () => {
 
       <div className="videos__video-cards">
         <VideoCard
+          verified
           title="Java for the Haters in 100 Seconds"
           views="537K"
           channel="Fireship"
