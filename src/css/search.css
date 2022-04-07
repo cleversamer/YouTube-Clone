@@ -1,0 +1,9 @@
+.search {
+  flex: 0.83;
+  padding: 10px 0 10px 20px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 91vh;
+}

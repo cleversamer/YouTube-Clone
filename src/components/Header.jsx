@@ -16,8 +16,11 @@ const Header = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    navigate(`/search/${input}`);
-    setInput("");
+
+    if (input) {
+      navigate(`/search/${input}`);
+      setInput("");
+    }
   };
 
   return (

@@ -1,14 +1,16 @@
 import React from "react";
-import { useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { TuneOutlined } from "@mui/icons-material";
 import "../css/search.css";
 
 const Search = () => {
-  const params = useSearchParams();
-  console.log(params);
+  const { searchTerm } = useParams();
 
   return (
-    <div>
-      <h2>Search</h2>
+    <div className="search">
+      <div className="search__filter">
+        <TuneOutlined />
+      </div>
     </div>
   );
 };
