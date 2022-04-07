@@ -1,15 +1,18 @@
 .videos {
   flex: 0.83;
+  padding: 10px 0 10px 20px;
+  box-sizing: border-box;
+  background-color: #fafafa;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 10px 0 10px 20px;
-  background-color: #fafafa;
+  max-height: 91vh;
 }
 
 .videos__heading {
-  margin-left: 5px;
+  margin-left: 10px;
   margin-bottom: 20px;
   color: #111;
+  font-size: 22px;
 }
 
 .videos__video-cards {

@@ -1,6 +1,7 @@
 .video-card {
   margin-bottom: 40px;
   width: 270px;
+  cursor: pointer;
 }
 
 .video-card__poster {
