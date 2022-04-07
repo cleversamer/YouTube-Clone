@@ -1,14 +1,9 @@
-import { Avatar as MuiAvatar } from "@mui/material";
+import { Avatar } from "@mui/material";
 
-const Avatar = () => {
-  const rnd = Math.floor(Math.random() * 5000);
+const RandomAvatar = () => {
+  const size = Math.floor(Math.random() * 300) + 100;
 
-  return (
-    <MuiAvatar
-      className="clickable"
-      src={`https://avatars.dicebear.com/api/human/${rnd}.svg`}
-    />
-  );
+  return <Avatar className="clickable" src={`https://i.pravatar.cc/${size}`} />;
 };
 
-export default Avatar;
+export default RandomAvatar;

@@ -17,7 +17,7 @@ import {
   EmojiEventsOutlined,
   FeedbackOutlined,
 } from "@mui/icons-material";
-import Avatar from "./Avatar";
+import RandomAvatar from "./Avatar";
 import SidebarRowGroup from "./SidebarRowGroup";
 import "../css/sidebar.css";
 
@@ -39,14 +39,14 @@ const Sidebar = () => {
     ],
     [
       { heading: true, title: "Subscriptions" },
-      { Icon: Avatar, title: "Samer A." },
-      { Icon: Avatar, title: "John Doe" },
-      { Icon: Avatar, title: "Citlali Fancy" },
-      { Icon: Avatar, title: "Braden Sganyodaiyo" },
-      { Icon: Avatar, title: "Hollie Tommy" },
-      { Icon: Avatar, title: "Barret Petra" },
-      { Icon: Avatar, title: "Georgie Sophie" },
-      { Icon: Avatar, title: "Jessa Carmen" },
+      { Icon: RandomAvatar, title: "Samer A." },
+      { Icon: RandomAvatar, title: "John Doe" },
+      { Icon: RandomAvatar, title: "Citlali Fancy" },
+      { Icon: RandomAvatar, title: "Braden Sganyodaiyo" },
+      { Icon: RandomAvatar, title: "Hollie Tommy" },
+      { Icon: RandomAvatar, title: "Barret Petra" },
+      { Icon: RandomAvatar, title: "Georgie Sophie" },
+      { Icon: RandomAvatar, title: "Jessa Carmen" },
       { Icon: KeyboardArrowDown, title: "Show 40 more" },
     ],
     [

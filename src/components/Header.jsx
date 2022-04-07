@@ -6,7 +6,7 @@ import {
   Apps,
   Notifications,
 } from "@mui/icons-material";
-import Avatar from "./Avatar";
+import RandomAvatar from "./Avatar";
 import "../css/header.css";
 
 const Header = () => {
@@ -37,7 +37,7 @@ const Header = () => {
         <VideoCall className="header__icon clickable" />
         <Apps className="header__icon clickable" />
         <Notifications className="header__icon clickable" />
-        <Avatar
+        <RandomAvatar
           className="clickable"
           alt="Samer A."
           src="https://avatars.githubusercontent.com/u/73291969?v=4"
@@ -45,7 +45,7 @@ const Header = () => {
       </div>
 
       <div className="header__avatar clickable">
-        <Avatar
+        <RandomAvatar
           alt="Samer A."
           src="https://avatars.githubusercontent.com/u/73291969?v=4"
         />
