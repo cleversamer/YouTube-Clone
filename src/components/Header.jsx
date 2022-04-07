@@ -7,7 +7,7 @@ import {
   Apps,
   Notifications,
 } from "@mui/icons-material";
-import RandomAvatar from "./Avatar";
+import RandomAvatar from "./RandomAvatar";
 import "../css/header.css";
 
 const Header = () => {

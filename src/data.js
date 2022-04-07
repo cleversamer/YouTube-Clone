@@ -16,7 +16,7 @@ import {
   EmojiEventsOutlined,
   FeedbackOutlined,
 } from "@mui/icons-material";
-import RandomAvatar from "./components/Avatar";
+import RandomAvatar from "./components/RandomAvatar";
 
 export const rowGroups = [
   [

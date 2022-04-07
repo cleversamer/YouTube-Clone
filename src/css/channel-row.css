@@ -1,0 +1,47 @@
+.channel-row {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.channel-row__avatar {
+  height: 120px !important;
+  width: 120px !important;
+  margin: 10px 20px;
+}
+
+.channel-row__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-row__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.channel-row__verified {
+  font-size: inherit !important;
+  margin-left: 5px !important;
+}
+
+.channel-row__subscribers {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.channel-row__subscribers > *::after {
+  content: "●";
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: x-small;
+}
+
+.channel-row__subscribers,
+.channel-row__description {
+  color: #606060;
+  font-size: small !important;
+}
