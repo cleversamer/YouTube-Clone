@@ -2,4 +2,18 @@
   flex: 0.83;
   overflow-x: hidden;
   overflow-y: auto;
+  padding: 10px 0 10px 20px;
+  background-color: #fafafa;
+}
+
+.videos__heading {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.videos__video-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
