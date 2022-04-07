@@ -1,5 +1,5 @@
 .video-card {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   width: 270px;
   cursor: pointer;
 }
@@ -43,6 +43,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .video-card {
+    padding-bottom: 20px;
+  }
+
   .video-card__info {
     padding-left: 10px;
   }
