@@ -17,7 +17,7 @@ import {
   EmojiEventsOutlined,
   FeedbackOutlined,
 } from "@mui/icons-material";
-import { Avatar } from "@mui/material";
+import Avatar from "./Avatar";
 import SidebarRowGroup from "./SidebarRowGroup";
 import "../css/sidebar.css";
 
